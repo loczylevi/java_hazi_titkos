@@ -1,4 +1,6 @@
-public class RecipeIngredient {
+import java.io.Serializable;
+
+public class RecipeIngredient implements Serializable{
 
     private Ingredient ingredient;
     private double amount;

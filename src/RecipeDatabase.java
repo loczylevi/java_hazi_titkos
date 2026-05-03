@@ -1,5 +1,6 @@
 import java.io.*;
 import java.util.TreeMap;
+import java.util.ArrayList;
 
 public class RecipeDatabase implements Serializable {
 
@@ -9,6 +10,8 @@ public class RecipeDatabase implements Serializable {
     public Ingredient findIngredient(String name) {
         return ingredients.get(name);
     }
+
+
 
     public RecipeDatabase() {
         ingredients = new TreeMap<>();
@@ -44,6 +47,7 @@ public class RecipeDatabase implements Serializable {
             System.out.println("Nincs ilyen recept!");
         }
     }
+
 
     // mentés fájlba
     public void saveToFile(String fileName) throws IOException {

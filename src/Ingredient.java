@@ -1,4 +1,6 @@
-public class Ingredient {
+
+import java.io.Serializable;
+public class Ingredient implements Serializable {
     private String name;
     private String unit;
 

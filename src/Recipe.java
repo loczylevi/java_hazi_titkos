@@ -1,6 +1,6 @@
 import java.util.TreeMap;
-
-public class Recipe {
+import java.io.Serializable;
+public class Recipe implements Serializable{
     private String name;
     private TreeMap<String, RecipeIngredient> ingredients;
 
@@ -39,8 +39,8 @@ public class Recipe {
 
     // Listázás
     public void listIngredients() {
-        for (String key : ingredients.keySet()) {
-            System.out.println(key + ": " + ingredients.get(key));
+        for (RecipeIngredient h : ingredients.values()) {
+            System.out.println(h);
         }
     }
 
