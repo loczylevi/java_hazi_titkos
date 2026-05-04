@@ -1,6 +1,7 @@
 import java.io.*;
 import java.util.TreeMap;
 import java.util.ArrayList;
+import java.util.Comparator;
 
 public class RecipeDatabase implements Serializable {
 
@@ -57,12 +58,18 @@ public class RecipeDatabase implements Serializable {
     public void listRecipesByIngredientCount() {
         ArrayList<Recipe> recipeList = new ArrayList<>(recipes.values());
 
-        recipeList.sort((r1, r2) -> r1.getIngredientCount() - r2.getIngredientCount());
+        recipeList.sort(new Comparator<Recipe>() {
+            @Override
+            public int compare(Recipe r1, Recipe r2) {
+                return r1.getIngredientCount() - r2.getIngredientCount();
+            }
+        });
 
         for (Recipe r : recipeList) {
             System.out.println(r.getName() + " - hozzávalók száma: " + r.getIngredientCount());
         }
     }
+
 
 
     // mentés fájlba
