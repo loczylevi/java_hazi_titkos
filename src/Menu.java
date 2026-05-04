@@ -27,7 +27,7 @@ public class Menu {
     }
 
     public String menu_print() {
-        return "1. Új alapanyag\n2. Új recept\n3. Recept törlése\n4. Hozzávalók listázása\n5. Mentés fájlba\n6. Betöltés fájlból\n7. Kilépés";
+        return "1. Új alapanyag\n2. Új recept\n3. Recept törlése\n4. Hozzávalók listázása\n5. Receptek listázása név szerint\n6. Receptek listázása hozzávalók száma szerint\n7. Mentés fájlba\n8. Betöltés fájlból\n9. Kilépés";
 
     }
 

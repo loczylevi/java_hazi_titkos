@@ -14,6 +14,10 @@ public class Recipe implements Serializable{
         this.ingredients = new TreeMap<>();
     }
 
+    public int getIngredientCount() {
+        return ingredients.size();
+    }
+
     public String getName() {
         return name;
     }

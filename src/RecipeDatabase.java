@@ -48,6 +48,22 @@ public class RecipeDatabase implements Serializable {
         }
     }
 
+    public void listRecipesByName() {
+        for (Recipe r : recipes.values()) {
+            System.out.println(r);
+        }
+    }
+
+    public void listRecipesByIngredientCount() {
+        ArrayList<Recipe> recipeList = new ArrayList<>(recipes.values());
+
+        recipeList.sort((r1, r2) -> r1.getIngredientCount() - r2.getIngredientCount());
+
+        for (Recipe r : recipeList) {
+            System.out.println(r.getName() + " - hozzávalók száma: " + r.getIngredientCount());
+        }
+    }
+
 
     // mentés fájlba
     public void saveToFile(String fileName) throws IOException {
