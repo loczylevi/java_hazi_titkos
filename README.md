@@ -18,7 +18,7 @@ A kibontott ZIP-ből másold át:
 
 # src/
 
-mappát az Eclipse projektbe.
+mappát az Eclipse\n projektbe.
 
 ## Ha piros minden
 
