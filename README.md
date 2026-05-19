@@ -22,7 +22,7 @@ mappát az Eclipse\n projektbe.
 
 ## Ha piros minden
 
-Akkor:
+__Akkor__:
 
 Source folder beállítás
 
