@@ -16,7 +16,7 @@ Adj nevet.
 
 A kibontott ZIP-ből másold át:
 
-src/
+# src/
 
 mappát az Eclipse projektbe.
 
